@@ -1,0 +1,126 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+section{
+    height: 90vh;
+}
+
+h1{
+    margin: 1em 0;
+    text-align: center;
+}
+
+button{
+    cursor: pointer;
+}
+
+.card{
+    width:250px;
+    text-align: justify;
+    border-radius: 5px;
+    padding: 1em;
+    position:absolute;
+    left: 50%;
+    transform: translate(-50%);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.card img {
+    width: 200px;
+    text-align: center;
+    margin:1.5em 0;
+}
+
+.card__footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1em;
+}
+
+h2{
+    font-size: 18px;
+}
+
+.card button{
+    background-color:#0066cc;
+    text-decoration: none;
+    font-weight: 500;
+    color:white;
+    padding:0.5em 1em;
+    border-radius: 5px;
+    border: none;
+}
+
+#modal, #fade{
+    transition: 0.5s;
+    opacity: 1;
+    pointer-events: all;
+}
+
+#fade{
+    position:fixed;
+    top:0;
+    left:0;
+    background-color: rgba(0,0,0,0.7);
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+}
+
+#modal{
+    padding: 1em 1.5em;
+    border-radius: 10px;
+    
+    background-color: #ffffff;
+    width:500px;
+    max-width: 90%;
+
+    position: fixed;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+    z-index:10;
+
+}
+
+.modal__header{
+    display: flex;
+    justify-content: space-between;
+}
+
+#modal img{
+    width: 20px;
+}
+
+#modal p {
+    margin-top: 1em;
+    text-align: justify;
+}
+
+#closeModal{
+    border: none;
+    background-color: transparent;
+}
+
+#modal.hide,
+#fade.hide{
+    opacity: 0;
+    pointer-events: none;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top:90%;
+    text-align: center;
+    height: 10vh;
+    background-color:black;
+    width: 100%;
+    color:white;
+}
